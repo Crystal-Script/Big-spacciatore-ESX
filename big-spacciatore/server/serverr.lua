@@ -1,0 +1,32 @@
+ESX = exports["es_extended"]:getSharedObject()                      -- 1 -- 
+RegisterNetEvent('coca:1')
+AddEventHandler('coca:1', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('coca', 10)
+    Wait(2000)
+    xPlayer.addAccountMoney('money', 4500)
+end)
+
+RegisterNetEvent('coca:2')
+AddEventHandler('coca:2', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('coca', 10)
+    Wait(2000)
+    xPlayer.addAccountMoney('money', 4500)
+end)
+
+RegisterNetEvent('coca:3')                        -- 2 --
+AddEventHandler('coca:3', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('coca', 10)
+    Wait(2000)
+    xPlayer.addAccountMoney('money', 4500)
+end)
+
+RegisterNetEvent('coca:4')
+AddEventHandler('coca:4', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('coca', 10)
+    Wait(2000)
+    xPlayer.addAccountMoney('money', 4500)
+end)
